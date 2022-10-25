@@ -1,0 +1,19 @@
+.cardContainer {
+	display: flex;
+  flex-direction: column;
+  background-color: #00BDAB;
+  padding: 25px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  /* 鼠标移入显示手指 */
+  cursor: pointer;
+  /* 图片翻转特效 */
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.cardContainer:hover {
+  transform: scale(1.05);
+  /* transform: rotateY(360deg); */
+}
